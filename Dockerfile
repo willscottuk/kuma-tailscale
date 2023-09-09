@@ -19,4 +19,4 @@ HEALTHCHECK --interval=60s --timeout=30s --start-period=180s --retries=5 CMD cur
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
-CMD ["/bin/sh", "-c", "/usr/local/bin/tailscaled --state=/var/lib/tailscale/tailscaled.state --socket=/var/run/tailscale/tailscaled.sock & /usr/local/bin/tailscale up --authkey=$TS_AUTHKEY --accept-routes --hostname=$TS_HOSTNAME --login_server=$TS_SERVER & node server/server.js"]
+CMD ["/bin/sh", "-c", "/usr/local/bin/tailscaled --state=/var/lib/tailscale/tailscaled.state --socket=/var/run/tailscale/tailscaled.sock & /usr/local/bin/tailscale up --authkey=$TS_AUTHKEY --accept-routes --hostname=$TS_HOSTNAME & node server/server.js"]
