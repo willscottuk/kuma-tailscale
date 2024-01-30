@@ -1,5 +1,8 @@
 # Uptime Kuma with Tailscale Dockerfile (AMD64/ARM64/ARM(v7))
 
+> [!NOTE]
+> This is a modified fork of SGprooo/Uptime-Kuma-Tailscale-Docker to include the ability to set a custom login server, using the environment variable `TS_SERVER`
+
 **Work in progress - Though the dockerfile builds and runs fine at its current state**
 
 This Dockerfile is your ticket to building a docker image for [Uptime Kuma](https://github.com/louislam/uptime-kuma) with [Tailscale](https://tailscale.com) support; Uptime Kuma is a self-hosted monitoring tool, and Tailscale is a zero config VPN, making this combination a pretty useful one.
